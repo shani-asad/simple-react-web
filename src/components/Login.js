@@ -13,9 +13,9 @@ export default function Login() {
   const handleLogin = (e) => {
     e.preventDefault() // nyoe pue le
 
-    if (username === 'customer1' && password === '123') {
+    if (username === 'staff' && password === '123') {
       dispatch(loginSuccess())
-      // navigate('/protected') // TODO: navigate after login
+      navigate('/claims')
     } else {
       alert('Invalid credentials')
     }
